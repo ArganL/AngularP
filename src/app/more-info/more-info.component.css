@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    background-color:burlywood;
+    border-bottom: 3px solid;
+}
+#left{
+    width: 50%;
+    float: left;
+    height: 50%;
+}
+#right{
+    width: 50%;
+    float: right;
+    height: 50%;
+
+}
+img{
+    width: 90%;
+    margin: 5%;
+}
+p{
+    font-size: 20px;
+    margin: 5%;
+}
+button{
+    margin-top: 10%;
+    display: block;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}

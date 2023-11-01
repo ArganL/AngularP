@@ -1,0 +1,17 @@
+<h2>Items</h2>
+<div id="items">
+<div class="list-item" *ngFor="let item of items" (click)="info(item)">
+    <div class="Info">
+        <a>{{item.name}}</a>
+        <p *ngIf="item.description">{{item.description}}</p>
+        <p *ngIf="!item.description">No description!</p>
+    </div>
+    <div class="image">
+        <a *ngIf="item.image" >
+            <img [src]="'../../assets/' + item.image">
+        </a>
+    </div>
+    <button type="button" (click)="buy(item.name)">Buy</button>
+</div>
+</div>
+<app-more-info *ngIf="moreInfo.name" [product]="moreInfo"></app-more-info>

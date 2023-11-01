@@ -1,0 +1,10 @@
+<h2>{{product.name}}</h2>
+<div id="left">
+    <p *ngIf="product.description">{{product.description}}</p>
+    <p *ngIf="!product.description">No description!</p>
+</div>
+<div id="right">
+    <img [src]="'../../assets/' + product.image">
+</div>
+<hr>
+<button type="button" (click)="buy(product.name)">Buy</button>
